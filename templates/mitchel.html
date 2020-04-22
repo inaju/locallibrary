@@ -1,0 +1,31 @@
+{% extends 'base_generic.html' %}
+
+{% block content %}
+
+<h1>No of Languages in Library:{{NoOfLanguagesUsed}}</h1>
+<p>List of Languages</p>
+
+{% for lang in ListOfLanguages %}
+<ul>
+<li>{{lang}}</li>
+</ul>
+{% endfor %}
+
+<h1>No of Authors in Library:{{NoOFAuthors}}</h1>
+<p>List of Languages</p>
+
+
+{% for authors in ListOfAuthors %}
+<ul>
+<li>{{authors}}</li>
+
+</ul>
+
+
+
+{% endfor %}
+<p> You have visited this page {{visits}} times </p>
+
+{% endblock content %}
+
+
